@@ -1,0 +1,322 @@
+/* Remove all link and li decorations */
+
+a:link, li:link{
+
+	text-decoration: none;
+
+}
+/* Remove all list style */
+
+li{
+	list-style: none;
+}
+
+/* container principle for nav bar */
+
+#header-nav{
+
+	background-color: #CC6012;
+	width: 100%;
+	height: 130px;
+	overflow: visible;
+}
+
+/*Definitions for div container principle */
+
+#menu_tiles{
+
+	text-align: center;
+	width: 100%;
+	float: both;
+	margin-top: 3em;
+	position: relative;
+
+
+}
+
+/* define paddin for block and menu */
+
+#menu_tiles div, #menu {
+
+	padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Shadow box */
+
+.blocks{
+
+	box-shadow: 1px 1px 11px 1px orange;
+	height: 100%;
+
+}
+
+/* Height for all blocks and margins */
+
+div.blocks{
+
+	margin-bottom: 1.3em;
+	height: 400px;
+	background-color: #FFD289;
+	overflow: hidden;
+}
+/* Title "Our Menu" */ 
+
+#menu_tiles h1.principle{
+
+	margin-bottom: 1.3em;
+	background-color: #F0453D;
+	font-family: "Lobster","sans-serif";
+	z-index: -2;
+}
+
+/* Colors for all div in h1 */
+
+#menu_tiles div h1{
+
+	background-color: orange;
+	color: white;
+}
+
+
+/* Text inside articles */
+
+#menu_tiles article p {
+	margin-top: 2%;
+	text-align: left;
+	margin-top: 1.3em;
+
+}
+
+/* Title page */
+
+.navbar-brand h1{
+	font-family: "Lobster","sans-serif";
+	font-size: 2.7em;
+	color: #F7E7AD;
+	margin-top:14%;
+	margin-left: 40px;
+
+
+}
+/* Collapsable menu hidden just in xl version */
+
+#collapsable-nav{
+
+	text-align: center;
+	z-index: 3;
+	overflow: hidden;
+}
+
+#menu_tiles div.unique{
+
+	padding:0px;
+	width: 100%;
+}
+
+
+
+/* Logotipo */
+
+#Navbar-image{
+
+	width: 220px;
+	height: 230px;
+}
+
+/* button - dropdown padron*/
+
+#button_dropdown{
+	margin-top: 4em;
+}
+
+
+#collapsable-nav{
+
+	margin-top: 4%;
+}
+
+
+#collapsable-nav li a {
+
+	color:white;
+	font-size: 1.1em;
+}
+
+/* border for menu nav bar dropdown */
+
+#collapsable-nav li{
+
+	border-top: 1px solid white;
+}
+
+
+
+/* Large devices - TV and others */
+
+@media(min-width: 1200px){
+
+	#header-nav{
+		height: 130px;
+
+	}
+
+
+
+	.navbar-brand h1{
+		font-family: "Lobster","sans-serif";
+		font-size: 3.8em;
+		color: #F7E7AD;
+		margin-top:0.3em;
+		margin-left: 2em;
+	}
+
+	.list_nav ul li{
+		align-content: center;
+		background-color: gray;
+		height: 2em;
+		width: 8em;
+		margin-left: 10px;
+
+	}
+
+
+	#menu_tiles h1{
+
+		font-family: "Pacifico","sans-serif";
+		font-size: 3.5em;
+	}
+
+	#menu_tiles div article p {
+		margin-top: 5%;
+		font-size: 17px;
+
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1199px){
+	#header-nav{
+
+	height: 100px;
+
+	}
+	
+
+	#name h1 {
+		font-family: "Lobster","sans-serif";
+		font-size: 2.5em;
+		color: #F7E7AD;
+		margin-top:0.5em;
+		margin-left: 3.0em;
+		margin-right: 0.3em;
+	}
+
+	#Navbar-image{
+
+		width: 130px;
+		height: 150px;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+
+	#collapsable-nav{
+
+		width: auto;
+		margin-right: 1em;
+
+	}
+
+
+	#menu_tiles div h1{
+
+		font-family:"Pacifico","sans-serif";
+		font-size: 2em;
+	}
+
+	#menu_tiles h1.principle{
+
+		font-family: "Pacifico","sans-serif";
+		font-size: 2.5em;
+	}
+
+	#menu_tiles div article p {
+		margin-top: 8%;
+		font-size: 17px;
+
+	}
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px){
+
+	#header-nav{
+	height: 100px;
+
+	}
+
+
+	.navbar-brand h1{
+		font-family: "Lobster","sans-serif";
+		font-size: 2em;
+		color: #F7E7AD;
+		margin-top:0.5em;
+		margin-left: 1.2em;
+	}
+
+	#Navbar-image{
+
+		width: 150px;
+		height: 180px;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+
+	#collapsable-nav{
+
+		width: auto;
+		margin-right: 1em;
+	}
+
+	#menu_tiles h1.principle{
+
+		font-family: "Pacifico","sans-serif";
+		font-size: 4em;
+	}
+
+	#menu_tiles h1{
+
+		font-family: "Pacifico","sans-serif";
+		font-size: 3em;
+	}
+
+	#menu_tiles div article p {
+	margin-top: 8%;
+	font-size: 15px;
+
+	}
+}
+
+@media (min-width: 1px) and (max-width:767px){
+
+	#header-nav .nav {
+
+	height: 400px;
+	}
+
+	#collapsable-nav ul li a {
+
+		background-color: orange;
+	}
+	#menu_tiles{
+
+		margin-top: 20%;
+	}
+	#menu_tiles div article p {
+	margin-top: 8%;
+	font-size: 0.8em;
+
+	}
+}
