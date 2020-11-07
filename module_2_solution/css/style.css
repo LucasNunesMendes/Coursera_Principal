@@ -1,0 +1,221 @@
+*{
+
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-size: 15px;
+}
+
+
+body,html{
+
+	height:100%;
+	width:100%;
+
+}
+
+h1{
+
+}
+
+
+#title_unique {
+
+	text-align: center;
+	margin-top: 3%;
+	font-style: bold;
+	font-size: 175%;
+
+}
+
+/* This is a main contain */
+
+#container {
+
+
+	width: 100%;
+	height: 100%;
+	background-color: lightblue;
+	overflow: hidden;
+
+
+}
+
+
+
+/* Definition all sections - basic definitions*/
+
+section {
+
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+
+	
+
+}
+
+
+
+/* All H2 titles */
+
+section h2 {
+
+	text-align: left;
+	padding-left: 5%; 
+}
+
+
+
+#section_1 {
+
+
+	background-color: #3BD4A3;
+}
+
+#section_2 {
+
+	background-color: black;
+}
+
+#section_3 {
+
+	background-color: #78332C;
+
+}
+
+
+
+
+.titles_sections {
+	
+
+	position:relative;
+	border: 1px solid white;
+	color: white;
+	
+
+}
+
+.title_sections{
+
+
+	background-color: black;
+}
+
+section p {
+
+	color:white;
+	text-align: left;
+	font-size: 125%;
+}
+
+
+
+
+/* Desktop viewers - Big Screen */
+
+@media(min-width: 992px) {
+
+	section {height: 50%; 
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10%;
+	border-radius: 1px;
+	min-height: 200px;
+	max-width: 20%;
+	max-height: 40%;
+	left: 17%;
+	overflow: hidden;
+	border: 1px solid white;
+	}
+
+	.titles_sections {
+
+	left: 50%;
+	}
+
+	section p {
+
+	margin-top: 20%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+}
+
+/* Tablet viewers - Medium Screen */
+
+
+@media ( min-width: 768px ) and ( max-width: 991px){
+
+
+	#section_1, #section_2{
+	float: left;
+	top: 20px;	
+	left: 8%;
+	margin-left: 2%;
+	right: 10%;
+	width: 40%;
+	position: relative;	
+	}
+
+
+
+	#section_3 {
+		width: 82%;
+		left: 10%;
+		clear:left;
+		top:30px;	
+	}
+
+	.titles_sections {
+
+	left: 60%;
+
+	}
+
+	section p {
+
+	margin-top: 10%;
+	margin-bottom: 20%;
+	padding-left: 5%;
+	padding-right: 5%;
+	}
+}
+
+	
+
+
+/* Phone Viewers */
+
+@media (min-width: 300px) and (max-width:767px) {
+
+	section {
+
+		width: 90%;
+		height: 30%;
+		left: 5%;
+		right: 5%;
+		margin-top: 20px;
+		
+
+	}
+
+	section p {
+		margin-top: 10%;
+		margin-left: 5%; 
+		text-align: left;
+
+	}
+
+	.titles_sections {
+
+	left: 60%;
+
+	}
+}
+
+
